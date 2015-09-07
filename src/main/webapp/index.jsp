@@ -3,8 +3,10 @@
 <h2>Hello World!</h2>
 <form action="SubmitQuery">
 <input  type="submit" />
-<%if(session.getAttribute("a")!=null) {%>
-<%=session.getAttribute("a")
+<%if(request.getAttribute("b")!=null) {%>
+<%-- <%=session.getAttribute("a")
+%> --%>
+<%=request.getAttribute("b")
 %>
 <%} %>
 </form>
