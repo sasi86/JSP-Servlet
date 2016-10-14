@@ -21,7 +21,30 @@
 		</dependency>
 
 	</dependencies>
+
 	<build>
 		<finalName>SampleWar</finalName>
+		<plugins>  
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.10</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>my-repo1</id>
+			<name>your custom repo</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+
+	</repositories>
 </project>

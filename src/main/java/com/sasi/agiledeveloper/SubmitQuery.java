@@ -40,13 +40,14 @@ public class SubmitQuery extends HttpServlet {
 		PrintWriter write  = response.getWriter();
 		write.write("abc");
 		*/
-		Map<String, String> listBoxValues = new HashMap<>();
+		Map<String, String> listBoxValues = new HashMap<String, String>();
 		listBoxValues.put("books", "Java8 In Action,Spring In Action");
 		String query  = request.getParameter("query").toString();
 		
 	    response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
 	    response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
-	    response.getWriter().write(listBoxValues.get(query.toLowerCase()));     
+	    response.getWriter().write(listBoxValues.get(query.toLowerCase()));    
+	    
 		
 		
 	}
