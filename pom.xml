@@ -19,12 +19,21 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+
+
 
 	</dependencies>
 
 	<build>
 		<finalName>SampleWar</finalName>
-		<plugins>  
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -44,6 +53,9 @@
 			<id>my-repo1</id>
 			<name>your custom repo</name>
 			<url>http://repo1.maven.org/maven2/</url>
+			<releases>
+            <enabled>true</enabled>
+          </releases>
 		</repository>
 
 	</repositories>

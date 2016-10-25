@@ -4,6 +4,12 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
+	<listener>
+		<listener-class>com.sasi.agiledeveloper.listener.Session</listener-class>
+	</listener>
+	<!-- <listener>
+		<listener-class>com.sasi.agiledeveloper.listener.Context</listener-class>
+	</listener> -->
 <!-- Example to secure jsp file -->
 	<servlet>
 		<servlet-name>jsp-servlet</servlet-name>
